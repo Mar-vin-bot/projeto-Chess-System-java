@@ -37,8 +37,4 @@ public class Position {
 		return "Position [row=" + row + ", column=" + column + "]";
 	}
 	
-	
-	
-	
-
 }
