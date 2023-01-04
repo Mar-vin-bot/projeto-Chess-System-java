@@ -1,0 +1,41 @@
+package chess;
+
+public class ChessPosition {
+
+	private char column;
+	private Integer row;
+	
+	
+	public ChessPosition(char column, Integer row) {
+	if(column < 'a' || column > 'h' || row < 1 || row > 8) {
+		throw new ChessException("Erro instanciado ChessPosition valores validos, A-H & 1-8");
+	}
+		this.column = column;
+		this.row = row;
+	}
+
+
+	public char getColumn() {
+		return column;
+	}
+
+
+	public void setColumn(char column) {
+		this.column = column;
+	}
+
+
+	public Integer getRow() {
+		return row;
+	}
+
+
+	public void setRow(Integer row) {
+		this.row = row;
+	}
+	
+	
+	
+	
+	
+}
