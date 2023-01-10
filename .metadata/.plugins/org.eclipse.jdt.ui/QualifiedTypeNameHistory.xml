@@ -2,17 +2,18 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.InternalError"/>
     <fullyQualifiedTypeName name="boardgame.Board"/>
-    <fullyQualifiedTypeName name="chess.ChessMatch"/>
     <fullyQualifiedTypeName name="chess.Color"/>
     <fullyQualifiedTypeName name="boardgame.Piece"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
-    <fullyQualifiedTypeName name="boardgame.Position"/>
     <fullyQualifiedTypeName name="chess.ChessException"/>
     <fullyQualifiedTypeName name="boardgame.BoardException"/>
-    <fullyQualifiedTypeName name="chess.ChessPosition"/>
     <fullyQualifiedTypeName name="aplication.UI"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="chess.ChessPosition"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="chess.ChessMatch"/>
     <fullyQualifiedTypeName name="chess.ChessPiece"/>
+    <fullyQualifiedTypeName name="boardgame.Position"/>
 </qualifiedTypeNameHistroy>
