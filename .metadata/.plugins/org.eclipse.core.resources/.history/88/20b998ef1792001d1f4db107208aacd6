@@ -67,7 +67,7 @@ public class ChessMatch {
 		
 		if(capturedPiece != null) {
 			piecesOnTheBoards.remove(capturedPiece);
-			capturedPieces.add(capturedPiece);
+			capturedPiece.add(capturedPiece);
 		}
 		
 		return capturedPiece;
