@@ -233,7 +233,6 @@ public class ChessMatch {
 		placeNewPiece('b', 8, new Knight(board, Color.BLACK));
 		placeNewPiece('g', 8, new Knight(board, Color.BLACK));
 		placeNewPiece('d', 8, new Queen(board, Color.BLACK));
-		
 	}
 	
 	
