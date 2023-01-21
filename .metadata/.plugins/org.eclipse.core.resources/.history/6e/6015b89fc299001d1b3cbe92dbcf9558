@@ -1,6 +1,5 @@
 package chess;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -115,33 +114,6 @@ public class ChessMatch {
 		
 		return (ChessPiece) capturedPiece;
 	}
-	
-	public ChessPiece repleacePromotionPiece(String type) {
-		if(promotion == null) {
-			throw new IllegalStateException("There is not piece to be promoted");
-		}
-		if(!type.equalsIgnoreCase("B") && !type.equalsIgnoreCase("N") && !type.equalsIgnoreCase("R") && !type.equalsIgnoreCase("Q")) {
-			throw new InvalidParameterException("Invalid type for promotion ");
-		}
-		
-		Position pos = promotion.getChessPosition().toPosition();
-		Piece p = board.removePiece(pos);
-		piecesOnTheBoards.remove(p);
-		
-		ChessPiece pawnPromotion = newPiece(type, promotion.getColor());
-		board.pleacePiece(pawnPromotion, pos);
-		piecesOnTheBoards.add(pawnPromotion);
-		
-		return pawnPromotion;
-	}
-	
-	private ChessPiece newPiece (String type, Color color) {
-		if(type.equalsIgnoreCase("B")) return new Bishop(board, color);
-		if(type.equalsIgnoreCase("N")) return new Knight(board, color);
-		if(type.equalsIgnoreCase("Q")) return new Queen(board, color);
-		return new Rook(board, color);
-	}
-	
 
 	private Piece makeMove(Position source, Position target) {
 		ChessPiece p = (ChessPiece) board.removePiece(source);

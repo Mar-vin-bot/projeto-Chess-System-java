@@ -120,26 +120,13 @@ public class ChessMatch {
 		if(promotion == null) {
 			throw new IllegalStateException("There is not piece to be promoted");
 		}
-		if(!type.equalsIgnoreCase("B") && !type.equalsIgnoreCase("N") && !type.equalsIgnoreCase("R") && !type.equalsIgnoreCase("Q")) {
+		if(!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
 			throw new InvalidParameterException("Invalid type for promotion ");
 		}
 		
 		Position pos = promotion.getChessPosition().toPosition();
 		Piece p = board.removePiece(pos);
 		piecesOnTheBoards.remove(p);
-		
-		ChessPiece pawnPromotion = newPiece(type, promotion.getColor());
-		board.pleacePiece(pawnPromotion, pos);
-		piecesOnTheBoards.add(pawnPromotion);
-		
-		return pawnPromotion;
-	}
-	
-	private ChessPiece newPiece (String type, Color color) {
-		if(type.equalsIgnoreCase("B")) return new Bishop(board, color);
-		if(type.equalsIgnoreCase("N")) return new Knight(board, color);
-		if(type.equalsIgnoreCase("Q")) return new Queen(board, color);
-		return new Rook(board, color);
 	}
 	
 

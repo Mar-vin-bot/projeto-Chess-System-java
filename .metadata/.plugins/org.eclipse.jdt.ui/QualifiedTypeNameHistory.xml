@@ -17,11 +17,11 @@
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
     <fullyQualifiedTypeName name="chess.ChessException"/>
-    <fullyQualifiedTypeName name="chess.Color"/>
     <fullyQualifiedTypeName name="chess.pieces.Knight"/>
     <fullyQualifiedTypeName name="chess.pieces.Queen"/>
+    <fullyQualifiedTypeName name="chess.pieces.Rook"/>
     <fullyQualifiedTypeName name="chess.ChessMatch"/>
+    <fullyQualifiedTypeName name="chess.Color"/>
     <fullyQualifiedTypeName name="boardgame.Position"/>
     <fullyQualifiedTypeName name="chess.ChessPiece"/>
-    <fullyQualifiedTypeName name="chess.pieces.Rook"/>
 </qualifiedTypeNameHistroy>
